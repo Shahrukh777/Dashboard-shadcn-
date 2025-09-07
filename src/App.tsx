@@ -1,12 +1,27 @@
-import React from 'react'
-import { Button } from './components/ui/button'
+// import React from "react";
+import AppLayout from "./components/AppLayout";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Settings from "./components/Settings";
 
 const App = () => {
-  return (
-    <div>App
-      <Button className='hover:bg-primary/75 rounded-2xl' size="lg"> Save </Button>
-    </div>
-  )
-}
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <AppLayout />,
+      children: [
+        {
+          path: "/settings",
+          element: <Settings />,
+        },
+      ],
+    },
+  ]);
 
-export default App
+  return (
+    <>
+      <RouterProvider router={router} />
+    </>
+  );
+};
+
+export default App;
