@@ -9,8 +9,9 @@ const AppLayout = () => {
     <SidebarProvider>
       <div className="h-screen w-screen flex">
         <AppSidebar />
-        <Navbar />
-        <main className="">
+
+        <main className="h-full w-full flex flex-col">
+          <Navbar />
           <Outlet />
         </main>
       </div>
