@@ -3,6 +3,7 @@ import AppLayout from "./components/AppLayout";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Settings from "./components/Settings";
 import { ThemeProvider } from "./components/theme-provider";
+import Dashboard from "./Dashboard";
 
 const App = () => {
   const router = createBrowserRouter([
@@ -14,15 +15,19 @@ const App = () => {
           path: "/settings",
           element: <Settings />,
         },
+        {
+          path: "/dashboard",
+          element: <Dashboard />,
+        },
       ],
     },
   ]);
 
   return (
     <>
-    <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-      <RouterProvider router={router} />
-    </ThemeProvider>
+      <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+        <RouterProvider router={router} />
+      </ThemeProvider>
     </>
   );
 };
