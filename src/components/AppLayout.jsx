@@ -12,7 +12,9 @@ const AppLayout = () => {
 
         <main className="h-full w-full flex flex-col">
           <Navbar />
-          <Outlet />
+          <div className="p-2 h-full">
+            <Outlet />
+          </div>
         </main>
       </div>
     </SidebarProvider>

@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 import {
   Sidebar,
   SidebarContent,
@@ -6,8 +6,8 @@ import {
   SidebarGroupLabel,
   SidebarGroupAction,
   SidebarGroupContent,
-} from "@/components/ui/sidebar";
-import { Plus } from "lucide-react";
+} from "@/components/ui/sidebar"
+import { Plus } from "lucide-react"
 
 export function AppSidebar() {
   return (
@@ -16,7 +16,7 @@ export function AppSidebar() {
         <SidebarGroup>
           <SidebarGroupLabel>Application</SidebarGroupLabel>
           <SidebarGroupAction>
-            <Plus />
+            <Plus /> <span className="sr-only">Add Project</span>
           </SidebarGroupAction>
           <SidebarGroupContent>
             {/* your nav links or items here */}
@@ -24,5 +24,5 @@ export function AppSidebar() {
         </SidebarGroup>
       </SidebarContent>
     </Sidebar>
-  );
+  )
 }

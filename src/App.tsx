@@ -2,6 +2,7 @@
 import AppLayout from "./components/AppLayout";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Settings from "./components/Settings";
+import { ThemeProvider } from "./components/theme-provider";
 
 const App = () => {
   const router = createBrowserRouter([
@@ -19,7 +20,9 @@ const App = () => {
 
   return (
     <>
+    <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
       <RouterProvider router={router} />
+    </ThemeProvider>
     </>
   );
 };

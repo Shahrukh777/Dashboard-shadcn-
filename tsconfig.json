@@ -19,7 +19,7 @@
 
     /* JS/TS Compatibility */
     "allowJs": true, // ✅ allows .js/.jsx
-    "checkJs": false, // set to true if you want type-checking for .js/.jsx
+    "checkJs": true, // set to true if you want type-checking for .js/.jsx
 
     /* Modules */
     "module": "ESNext",
