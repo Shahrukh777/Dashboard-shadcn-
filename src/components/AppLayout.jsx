@@ -22,7 +22,7 @@ const AppLayout = () => {
       <div className="h-screen w-screen flex">
         <AppSidebar />
 
-        <main className="h-full w-full flex flex-col">
+        <main className="h-full w-full flex flex-col overflow-auto">
           <Navbar />
           <div className="p-2 h-full">
             <Outlet />

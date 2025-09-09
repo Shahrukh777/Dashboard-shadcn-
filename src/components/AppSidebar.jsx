@@ -93,6 +93,7 @@ export function AppSidebar() {
               ))}
             </SidebarMenu>
           </SidebarGroupContent>
+          <SidebarSeparator className="mt-4" />
         </SidebarGroup>
 
         {/*                   GROUP ACTIONS             */}
@@ -133,8 +134,6 @@ export function AppSidebar() {
       {/*                    Footer                   */}
 
       <SidebarFooter>
-        <SidebarMenu>
-          <SidebarMenuItem>
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <SidebarMenuButton className="ml-auto">
@@ -149,12 +148,10 @@ export function AppSidebar() {
                 <DropdownMenuItem>Account</DropdownMenuItem>
                 <DropdownMenuItem>Settings</DropdownMenuItem>
                 <DropdownMenuItem className="flex gap-1.5 items-center">
-                  Upgrade to Pro <StarsIcon size={18} />{" "}
+                  Upgrade to Pro <StarsIcon size={16} />{" "}
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
-          </SidebarMenuItem>
-        </SidebarMenu>
       </SidebarFooter>
     </Sidebar>
   );
